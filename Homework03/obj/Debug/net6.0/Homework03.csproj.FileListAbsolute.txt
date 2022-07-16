@@ -1,0 +1,15 @@
+/home/vildan/Desktop/GIT/Homework 3/Homework03/bin/Debug/net6.0/Homework03
+/home/vildan/Desktop/GIT/Homework 3/Homework03/bin/Debug/net6.0/Homework03.deps.json
+/home/vildan/Desktop/GIT/Homework 3/Homework03/bin/Debug/net6.0/Homework03.runtimeconfig.json
+/home/vildan/Desktop/GIT/Homework 3/Homework03/bin/Debug/net6.0/Homework03.dll
+/home/vildan/Desktop/GIT/Homework 3/Homework03/bin/Debug/net6.0/Homework03.pdb
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.csproj.AssemblyReference.cache
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.GeneratedMSBuildEditorConfig.editorconfig
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.AssemblyInfoInputs.cache
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.AssemblyInfo.cs
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.csproj.CoreCompileInputs.cache
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.dll
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/refint/Homework03.dll
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.pdb
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/Homework03.genruntimeconfig.cache
+/home/vildan/Desktop/GIT/Homework 3/Homework03/obj/Debug/net6.0/ref/Homework03.dll
