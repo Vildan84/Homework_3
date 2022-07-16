@@ -1,10 +1,22 @@
 ﻿void Task01()
 {
-
+    double x = 5;
+    double b = (x * Math.PI) / 180;
+        
+    if (x > 0)
+    {
+        double y = Math.Pow(Math.Sin(b), 2);
+        Console.WriteLine(Math.Round(y, 2));
+    }
+    else
+    {
+        double c = (Math.Pow(x, 2) * Math.PI) / 180;
+        double y = 1 - 2 * (Math.Sin(c));
+        
+        Console.WriteLine(Math.Round(y, 2));
+    } 
 }
-
-
-
+//Task01();
 
 void Task02()
 {
@@ -59,3 +71,4 @@ void Task04()
     Console.WriteLine();
 }
 //Task04();
+
