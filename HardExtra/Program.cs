@@ -104,32 +104,44 @@ void PrintArray(int[] col)
 
 
 //Задача 2 + 3
-int[] a = {7,3};   //CreatePoint();
-int[] b = {4,-3};   //CreatePoint();
-int[] c = {7,-3};   //CreatePoint();
-int[] d = {3,4};   //CreatePoint();
+// int[] a = {7,3};   //CreatePoint();
+// int[] b = {4,-3};   //CreatePoint();
+// int[] c = {7,-3};   //CreatePoint();
+// int[] d = {3,4};   //CreatePoint();
 
-PrintArray(a); PrintArray(b); PrintArray(c); PrintArray(d);
+// PrintArray(a); PrintArray(b); PrintArray(c); PrintArray(d);
 
-double v1 = (c[0] - d[0]) * (c[1] - a[1]) - (c[0] - a[0]) * (c[1] - d[1]);
-double v2 = (c[0] - d[0]) * (c[1] - b[1]) - (c[0] - b[0]) * (c[1] - d[1]);
-double v3 = (b[0] - a[0]) * (b[1] - d[1]) - (b[0] - d[0]) * (b[1] - a[1]);
-double v4 = (b[0] - a[0]) * (b[1] - c[1]) - (b[0] - c[0]) * (b[1] - a[1]);
-Console.WriteLine($"v1:{v1} v2:{v2} v3:{v3} v4:{v4}");
+// double v1 = (c[0] - d[0]) * (c[1] - a[1]) - (c[0] - a[0]) * (c[1] - d[1]);
+// double v2 = (c[0] - d[0]) * (c[1] - b[1]) - (c[0] - b[0]) * (c[1] - d[1]);
+// double v3 = (b[0] - a[0]) * (b[1] - d[1]) - (b[0] - d[0]) * (b[1] - a[1]);
+// double v4 = (b[0] - a[0]) * (b[1] - c[1]) - (b[0] - c[0]) * (b[1] - a[1]);
+// Console.WriteLine($"v1:{v1} v2:{v2} v3:{v3} v4:{v4}");
 
-double x = 0;
-double y = 0;
-if (v1 * v2 < 0 && v3 * v4 < 0) 
+// double x = 0;
+// double y = 0;
+// if (v1 * v2 < 0 && v3 * v4 < 0) 
+// {
+//     Console.WriteLine("Отрезки пересекаются");
+//     x = d[0] + (c[0] - d[0]) * Math.Abs(v3)/ Math.Abs(v4 - v3);
+//     y = d[1] + (c[1] - d[1]) * Math.Abs(v3)/ Math.Abs(v4 - v3);
+//     Console.WriteLine($"x = {x} y = {y}");
+// }
+// else Console.WriteLine("Отрезки не пересекаются");
+
+// if (x>0 && y>0) Console.WriteLine("First quater");
+// else if (x<0 && y>0) Console.WriteLine("Second quater");
+// else if (x>0 && y<0) Console.WriteLine("Fours quater");
+// else if (x<0 && y<0) Console.WriteLine("Third quater");
+// else Console.WriteLine("No intersection");
+
+//Задача8
+Random rand = new Random();
+int n = rand.Next(2, 20);
+
+for (int i = 1; i<n; i++)
 {
-    Console.WriteLine("Отрезки пересекаются");
-    x = d[0] + (c[0] - d[0]) * Math.Abs(v3)/ Math.Abs(v4 - v3);
-    y = d[1] + (c[1] - d[1]) * Math.Abs(v3)/ Math.Abs(v4 - v3);
-    Console.WriteLine($"x = {x} y = {y}");
+    for (int j = 1; j<n; j++) Console.WriteLine($"{i}x{j} = {i*j}");
+    Console.WriteLine();
 }
-else Console.WriteLine("Отрезки не пересекаются");
 
-if (x>0 && y>0) Console.WriteLine("First quater");
-else if (x<0 && y>0) Console.WriteLine("Second quater");
-else if (x>0 && y<0) Console.WriteLine("Fours quater");
-else if (x<0 && y<0) Console.WriteLine("Third quater");
-else Console.WriteLine("No intersection");
+
