@@ -46,6 +46,15 @@ void PrintArray(int[] col)
     Console.WriteLine();
 }
 
+void FillArray(int[] col)
+{
+    int len = col.Length;
+    for (int i = 0; i<len; i++)
+    {
+        col[i] = new Random().Next(1, 100);
+    }
+}
+
 //Задача1
 // int[] point1 = CreatePoint(); 
 // int[] point2 = CreatePoint(); 
@@ -134,14 +143,63 @@ void PrintArray(int[] col)
 // else if (x<0 && y<0) Console.WriteLine("Third quater");
 // else Console.WriteLine("No intersection");
 
+//Задача7
+// int[] array = new int[99];
+// FillArray(array);
+// int count = 0;
+// int[] newArray = new int[array.Length];
+// int j = 0;
+
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i] == 3 | array[i]/10 == 3 | array[i]%10 == 3) count++;
+//     else 
+//     {
+//         newArray[j] = array[i]; 
+//         j++;
+//     }
+// }
+// Console.WriteLine($"Count: {count}");
+// PrintArray(newArray);
+
+
 //Задача8
-Random rand = new Random();
-int n = rand.Next(2, 20);
+// Random rand = new Random();
+// int n = rand.Next(2, 20);
 
-for (int i = 1; i<n; i++)
-{
-    for (int j = 1; j<n; j++) Console.WriteLine($"{i}x{j} = {i*j}");
-    Console.WriteLine();
-}
+// for (int i = 1; i<n; i++)
+// {
+//     for (int j = 1; j<n; j++) Console.WriteLine($"{i}x{j} = {i*j}");
+//     Console.WriteLine();
+// }
 
+//Задача9
 
+// for (int result = 1; result < 1000;)
+// {
+//     Console.WriteLine("First player enter number from 2 to 9:");
+//     int number = Convert.ToInt32(Console.ReadLine());
+//     result = number * result;
+
+//     if (result > 1000)
+//     {
+//         Console.WriteLine("First player win!!!"); 
+//         break;
+//     }
+
+//     Console.WriteLine($"Currently result: {result}");
+
+//     Console.WriteLine("Second player enter number from 2 to 9:");
+//     int number2 = Convert.ToInt32(Console.ReadLine());
+
+//     for (int res = result; result < res * number2;)
+//     {
+//         result = res * number2;
+//         if (result > 1000)
+//         {
+//             Console.WriteLine("Second player win!!!"); 
+//             break;
+//         }
+//         Console.WriteLine($"Currently result: {result}");
+//     }
+// }
