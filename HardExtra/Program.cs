@@ -143,6 +143,36 @@ void FillArray(int[] col)
 // else if (x<0 && y<0) Console.WriteLine("Third quater");
 // else Console.WriteLine("No intersection");
 
+//Задача5
+// Console.WriteLine("Enter number > 4:");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if (number < 4) Console.WriteLine("Incorrect number");
+
+// string[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "j", "k", "l", "m",
+// "n", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+// string[] digits = {"2", "3", "4", "5", "6", "7", "8", "9"};
+// string[] symbols = {"#", "@", "%", "&"};
+// string password = string.Empty;
+// Random rand = new Random();
+
+// for (int i = 0; i < number;)
+// {
+//     password += digits[rand.Next(0, 8)];
+//     i ++;
+//     if (i == number) break;
+
+//     password += symbols[rand.Next(0, 4)];
+//     i ++;
+//     if (i == number) break;
+
+//     password += letters[rand.Next(0, 24)];
+//     i ++;
+//     if (i == number) break;
+// }
+
+// Console.WriteLine(password);
+
 //Задача7
 // int[] array = new int[99];
 // FillArray(array);
@@ -203,3 +233,4 @@ void FillArray(int[] col)
 //         Console.WriteLine($"Currently result: {result}");
 //     }
 // }
+
