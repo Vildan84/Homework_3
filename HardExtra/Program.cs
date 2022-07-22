@@ -173,6 +173,20 @@ void FillArray(int[] col)
 
 // Console.WriteLine(password);
 
+
+ //Задача6
+
+// int[] point = CreatePoint();
+// double katetA = point[0];
+// double katetB = point[1];
+// Console.WriteLine($"katetA = {katetA} katetB = {katetB}");
+
+// double rad = Math.Atan(katetB / katetA);
+// double angleB = rad * (180/Math.PI);
+// double angleA = 90 - angleB;
+// Console.WriteLine($"angleA = {angleA} angleB = {angleB}");
+
+
 //Задача7
 // int[] array = new int[99];
 // FillArray(array);
@@ -233,4 +247,3 @@ void FillArray(int[] col)
 //         Console.WriteLine($"Currently result: {result}");
 //     }
 // }
-
