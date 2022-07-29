@@ -143,6 +143,96 @@ void FillArray(int[] col)
 // else if (x<0 && y<0) Console.WriteLine("Third quater");
 // else Console.WriteLine("No intersection");
 
+
+//Задача4
+void FillTemp(int[] col)
+{
+    for (int i = 0; i<120;)
+    {
+
+        for (int w = 0; w < 3; w++)
+        {
+            col[i] = new Random().Next(-30, 5);
+            i++;
+        }
+        for (int s = 0; s < 3; s++)
+        {
+            col[i] = new Random().Next(-5, 15);
+            i++;
+        }
+        for (int u = 0; u < 3; u++)
+        {
+            col[i] = new Random().Next(15, 35);
+            i++;
+        }
+        for (int a = 0; a < 3; a++)
+        {
+            col[i] = new Random().Next(5, 20);
+            i++;
+        }
+    }
+}
+int[] arr = new int[120];
+FillTemp(arr);
+PrintArray(arr);
+
+Console.WriteLine(arr.Min());
+Console.WriteLine(arr.Max());
+
+Console.Write("Please enter start year from 2010 - 2020: ");
+int startYear = Convert.ToInt32(Console.ReadLine());
+Console.Write("Please enter end year from 2010 - 2020: ");
+int endYear = Convert.ToInt32(Console.ReadLine());
+Console.Write("Please enter month: ");
+int month = Convert.ToInt32(Console.ReadLine());
+
+int startIndex = startYear % 10 * 12 + month;
+int endIndex = startIndex + ((endYear - startYear) * 12);
+
+Console.WriteLine(startIndex);
+Console.WriteLine(endIndex);
+
+int[] winter = new int[(endYear - startYear) * 12 / 4];
+int[] spring = new int[(endYear - startYear) * 12 / 4];
+int[] summer = new int[(endYear - startYear) * 12 / 4];
+int[] autumn = new int[(endYear - startYear) * 12 / 4];
+
+int i = startIndex;
+int w = 0;
+int s = 0;
+int u = 0;
+int a = 0;
+
+for (i = startIndex; i < endIndex; i++)
+{
+    int check = i - (i /12) * 12;
+   
+    if (check == 1 || check == 2 || check == 0) 
+    {
+        winter[w] = arr[i]; w++;
+    }
+    else if (check == 3 || check == 4 || check == 5) 
+    {
+        spring[s] = arr[i]; s++;
+    }
+    else if (check == 6 || check == 7 || check == 8) 
+    {
+        summer[u] = arr[i]; u++;
+    }
+    else
+    {
+        autumn[a] = arr[i]; a++;
+    }
+    
+}
+Console.WriteLine($"Winter temperature Max: {winter.Max()} Min: {winter.Min()}");
+Console.WriteLine($"Spring temperature Max: {spring.Max()} Min: {spring.Min()}");
+Console.WriteLine($"Summer temperature Max: {summer.Max()} Min: {summer.Min()}");
+Console.WriteLine($"Autumn temperature Max: {autumn.Max()} Min: {autumn.Min()}");
+
+
+
+
 //Задача5
 // Console.WriteLine("Enter number > 4:");
 // int number = Convert.ToInt32(Console.ReadLine());
