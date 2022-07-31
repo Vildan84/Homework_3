@@ -1,22 +1,30 @@
 ﻿void Task01()
 {
-    double x = 5;
-    double b = (x * Math.PI) / 180;
-        
-    if (x > 0)
+    int[] arrayA = new int[361];
+    for (int i = 0; i < 361; i++)
     {
-        double y = Math.Pow(Math.Sin(b), 2);
-        Console.WriteLine(Math.Round(y, 2));
+        arrayA[i] = i;
     }
-    else
+
+    int[] arrayB = new int[361];
+    int j = 1;
+    for (int i = -1; i > -361; i--)
     {
-        double c = (Math.Pow(x, 2) * Math.PI) / 180;
-        double y = 1 - 2 * (Math.Sin(c));
+        arrayB[j] = i;
+        j++;
+    }
         
-        Console.WriteLine(Math.Round(y, 2));
-    } 
+    for (int i = 0; i < 361; i++)
+    {
+        double b = (arrayA[i] * Math.PI) / 180;
+        double c = (Math.Pow(arrayB[i], 2) * Math.PI) / 180;
+        double y1 = Math.Pow(Math.Sin(b), 2);
+        double y2 = 1 - 2 * (Math.Sin(c));
+        if (Math.Round(y1, 2) == Math.Round(y2, 2)) Console.WriteLine($"Degrees = {arrayA[i]}");
+    }
+    
 }
-//Task01();
+Task01();
 
 void Task02()
 {
@@ -71,4 +79,8 @@ void Task04()
     Console.WriteLine();
 }
 //Task04();
+
+//Dificult tasks
+
+
 
